@@ -1,0 +1,29 @@
+%results__container {
+  @include display($j-content: space-between);
+  background-color: $light-red-transparent;
+  border-radius: 8px;
+  padding: .9375rem 1rem;
+
+  .card__right__results__left {
+    @include display($j-content: center, $a-items: center);  
+    gap: 10px;
+
+    span {
+      color: $light-red;
+      font-size: 17px;
+    }
+  }
+
+  .card__right__results__right {
+    @include display($j-content: center, $a-items: center);
+
+    p {
+      font-weight: 700;
+
+      span {
+        color: $pale-gray;
+        margin-left: 5px;
+      }
+    }
+  }
+}

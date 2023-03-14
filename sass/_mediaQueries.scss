@@ -1,0 +1,164 @@
+@media (max-width: 780px) {
+  .container {
+    
+    .card {
+      flex-direction: column;
+      box-shadow: none;
+      width: 36.5rem;
+  
+      .card__left {
+        width: 100%;
+      }
+  
+      .card__right {      
+        border-radius: 0 0 30px 30px;
+        gap: 24px;
+        padding: 2rem 2.25rem;
+        width: 100%;
+  
+        .card__right__results {
+          margin-bottom: 0;
+          margin-top: 5px;
+        }      
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    
+    .card {
+      width: 28.5rem;
+  
+      .card__left {
+        padding: 2rem 3.225rem 2.8rem 3.225rem;
+  
+        .card__left__title {
+          font-size: 18px;
+        }
+  
+        .card__left__points {
+          margin: 1.4rem 0;
+          height: 9.5625rem;
+          width: 9.5625rem;
+          
+          .card__left__points__user {
+            font-size: 58px;
+            height: 70px;
+          }
+  
+          .card__left__points__total {
+            font-size: 15px;
+          }
+        }
+  
+        .card__left__rating {
+          font-size: 28px;
+        }
+  
+        .card__left__meaning {
+          font-size: 15px;
+        }
+      }
+  
+      .card__right {
+  
+        .card__right__title {
+          font-size: 18px;
+        }     
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    
+    .card {
+      width: 22.5rem;
+  
+      .card__left {
+        border-radius: 0 0 30px 30px;
+      }
+  
+      .card__right {
+  
+        .card__right__results {
+  
+          .card__right__results__container__reaction {
+
+            .card__right__results__left {
+
+              span {
+                font-size: 16px;
+              }
+            }
+
+            .card__right__results__right {
+
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+  
+          .card__right__results__container__memory {
+  
+            .card__right__results__left {
+  
+              span {
+                font-size: 16px;
+              }
+            }
+
+            .card__right__results__right {
+
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+  
+          .card__right__results__container__verbal {
+  
+            .card__right__results__left {
+  
+              span {
+                font-size: 16px;
+              }
+            }
+
+            .card__right__results__right {
+
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+  
+          .card__right__results__container__visual {
+  
+            .card__right__results__left {
+  
+              span {
+                font-size: 16px;
+              }
+            }
+
+            .card__right__results__right {
+
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+  
+        .btn-continue {
+          font-size: 15px;
+        }      
+      }
+    }
+  }
+}

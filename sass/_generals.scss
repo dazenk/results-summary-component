@@ -1,0 +1,136 @@
+.container {
+  @include display($j-content: center, $a-items: center);
+  
+  .card {
+    background-color: $white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 110px -35px $light-lavender;
+    display: flex;
+    width: 42.5rem;
+
+    .card__left {
+      @include display($f-direction: column, $a-items: center);
+      background: linear-gradient($light-slate-blue, $light-royal-blue);
+      border-radius: 30px;
+      padding: 2.5rem 3.625rem 3.125rem 3.625rem;
+      width: 50%;
+
+      .card__left__title {
+        color: $light-lavender;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .card__left__points {
+        @include display($f-direction: column, $j-content: center, $a-items: center);
+        background: linear-gradient($violet-blue, $persian-blue);
+        border-radius: 5.78125rem;
+        height: 11.5625rem;
+        margin: 2rem 0;
+        width: 11.5625rem;
+        
+        .card__left__points__user {
+          color: $white;
+          font-size: 66px;
+          font-weight: 800;
+          height: 80px;
+        }
+
+        .card__left__points__total {
+          color: $light-lavender-transparent;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .card__left__rating {
+        color: $white;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: .625rem;
+      }
+
+      .card__left__meaning {
+        color: $light-lavender-transparent-two;
+        text-align: center;
+      }
+    }
+
+    .card__right {
+      @include display($f-direction: column, $j-content: space-between);
+      background-color: $white;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      padding: 2.5rem 2.25rem;
+      width: 50%;
+
+      .card__right__title {
+        color: $dark-gray-blue;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .card__right__results {
+        @include display($f-direction: column);
+        gap: .9375rem;
+        margin-bottom: .875rem;
+
+        .card__right__results__container__reaction {
+          @extend %results__container;
+        }
+
+        .card__right__results__container__memory {
+          @extend %results__container;
+          background-color: $light-orange-yellow;
+
+          .card__right__results__left {
+
+            span {
+              color: $orange-yellow;
+            }
+          }
+        }
+
+        .card__right__results__container__verbal {
+          @extend %results__container;
+          background-color: $light-green-teal;
+
+          .card__right__results__left {
+
+            span {
+              color: $green-teal;
+            }
+          }
+        }
+
+        .card__right__results__container__visual {
+          @extend %results__container;
+          background-color: $light-cobalt-blue;
+
+          .card__right__results__left {
+
+            span {
+              color: $cobalt-blue;
+            }
+          }
+        }
+      }
+
+      .btn-continue {        
+        background-color: $dark-gray-blue;
+        border: none;
+        border-radius: 26.5px;
+        color: $white;
+        cursor: pointer;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0.99rem;
+
+        &:hover {
+          background: linear-gradient($light-slate-blue, $light-royal-blue);
+        }
+      }      
+    }
+  }
+}

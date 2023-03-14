@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+.container .card .card__right .card__right__results .card__right__results__container__visual, .container .card .card__right .card__right__results .card__right__results__container__verbal, .container .card .card__right .card__right__results .card__right__results__container__memory, .container .card .card__right .card__right__results .card__right__results__container__reaction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: hsla(0deg, 100%, 67%, 0.07);
+  border-radius: 8px;
+  padding: 0.9375rem 1rem;
+}
+.container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__left, .container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__left, .container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__left, .container .card .card__right .card__right__results .card__right__results__container__reaction .card__right__results__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__left span, .container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__left span, .container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__left span, .container .card .card__right .card__right__results .card__right__results__container__reaction .card__right__results__left span {
+  color: hsl(0deg, 100%, 67%);
+  font-size: 17px;
+}
+.container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__right, .container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__right, .container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__right, .container .card .card__right .card__right__results .card__right__results__container__reaction .card__right__results__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__right p, .container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__right p, .container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__right p, .container .card .card__right .card__right__results .card__right__results__container__reaction .card__right__results__right p {
+  font-weight: 700;
+}
+.container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__right p span, .container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__right p span, .container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__right p span, .container .card .card__right .card__right__results .card__right__results__container__reaction .card__right__results__right p span {
+  color: hsl(0deg, 0%, 64%);
+  margin-left: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  min-width: 100vw;
+}
+html body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 30px;
+  box-shadow: 5px 5px 110px -35px hsl(241deg, 100%, 89%);
+  display: flex;
+  width: 42.5rem;
+}
+.container .card .card__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  background: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  border-radius: 30px;
+  padding: 2.5rem 3.625rem 3.125rem 3.625rem;
+  width: 50%;
+}
+.container .card .card__left .card__left__title {
+  color: hsl(241deg, 100%, 89%);
+  font-size: 22px;
+  font-weight: 700;
+}
+.container .card .card__left .card__left__points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  border-radius: 5.78125rem;
+  height: 11.5625rem;
+  margin: 2rem 0;
+  width: 11.5625rem;
+}
+.container .card .card__left .card__left__points .card__left__points__user {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 66px;
+  font-weight: 800;
+  height: 80px;
+}
+.container .card .card__left .card__left__points .card__left__points__total {
+  color: hsla(241deg, 100%, 89%, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+.container .card .card__left .card__left__rating {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+.container .card .card__left .card__left__meaning {
+  color: hsla(241deg, 100%, 89%, 0.9);
+  text-align: center;
+}
+.container .card .card__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: hsl(0deg, 0%, 100%);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 2.5rem 2.25rem;
+  width: 50%;
+}
+.container .card .card__right .card__right__title {
+  color: hsl(224deg, 30%, 27%);
+  font-size: 22px;
+  font-weight: 700;
+}
+.container .card .card__right .card__right__results {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: stretch;
+  gap: 0.9375rem;
+  margin-bottom: 0.875rem;
+}
+.container .card .card__right .card__right__results .card__right__results__container__memory {
+  background-color: hsla(39deg, 100%, 56%, 0.07);
+}
+.container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__left span {
+  color: hsl(39deg, 100%, 56%);
+}
+.container .card .card__right .card__right__results .card__right__results__container__verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.07);
+}
+.container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__left span {
+  color: hsl(166deg, 100%, 37%);
+}
+.container .card .card__right .card__right__results .card__right__results__container__visual {
+  background-color: hsla(234deg, 85%, 45%, 0.07);
+}
+.container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__left span {
+  color: hsl(234deg, 85%, 45%);
+}
+.container .card .card__right .btn-continue {
+  background-color: hsl(224deg, 30%, 27%);
+  border: none;
+  border-radius: 26.5px;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.99rem;
+}
+.container .card .card__right .btn-continue:hover {
+  background: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+}
+
+@media (max-width: 780px) {
+  .container .card {
+    flex-direction: column;
+    box-shadow: none;
+    width: 36.5rem;
+  }
+  .container .card .card__left {
+    width: 100%;
+  }
+  .container .card .card__right {
+    border-radius: 0 0 30px 30px;
+    gap: 24px;
+    padding: 2rem 2.25rem;
+    width: 100%;
+  }
+  .container .card .card__right .card__right__results {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 640px) {
+  .container .card {
+    width: 28.5rem;
+  }
+  .container .card .card__left {
+    padding: 2rem 3.225rem 2.8rem 3.225rem;
+  }
+  .container .card .card__left .card__left__title {
+    font-size: 18px;
+  }
+  .container .card .card__left .card__left__points {
+    margin: 1.4rem 0;
+    height: 9.5625rem;
+    width: 9.5625rem;
+  }
+  .container .card .card__left .card__left__points .card__left__points__user {
+    font-size: 58px;
+    height: 70px;
+  }
+  .container .card .card__left .card__left__points .card__left__points__total {
+    font-size: 15px;
+  }
+  .container .card .card__left .card__left__rating {
+    font-size: 28px;
+  }
+  .container .card .card__left .card__left__meaning {
+    font-size: 15px;
+  }
+  .container .card .card__right .card__right__title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .container .card {
+    width: 22.5rem;
+  }
+  .container .card .card__left {
+    border-radius: 0 0 30px 30px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__reaction .card__right__results__left span {
+    font-size: 16px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__reaction .card__right__results__right p {
+    font-size: 15px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__left span {
+    font-size: 16px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__memory .card__right__results__right p {
+    font-size: 15px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__left span {
+    font-size: 16px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__verbal .card__right__results__right p {
+    font-size: 15px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__left span {
+    font-size: 16px;
+  }
+  .container .card .card__right .card__right__results .card__right__results__container__visual .card__right__results__right p {
+    font-size: 15px;
+  }
+  .container .card .card__right .btn-continue {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
